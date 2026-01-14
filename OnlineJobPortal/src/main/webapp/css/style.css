@@ -1,0 +1,166 @@
+:root {
+	--primary-color: #495057;
+	--secondary-color: #1e40af;
+	--success-color: #10b981;
+	--danger-color: #ef4444;
+	--dark-color: #1f2937;
+	--light-bg: #f9fafb;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: var(--light-bg);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #010; /* Changed to white */
+}
+/* Specific rule for the Admin Navbar brand only */
+.admin-navbar .navbar-brand {
+    background-color: #ffffff !important; /* Forces the text to white */
+}
+
+
+.hero-section {
+	background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+	color: white;
+	padding: 80px 0;
+	margin-bottom: 40px;
+}
+
+.card {
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+	background-color: var(--primary-color);
+	border-color: var(--primary-color);
+	padding: 10px 24px;
+	font-weight: 500;
+}
+
+.btn-primary:hover {
+	background-color: var(--secondary-color);
+	border-color: var(--secondary-color);
+}
+
+.job-card {
+	margin-bottom: 20px;
+}
+
+.job-card .card-title {
+	color: var(--primary-color);
+	font-weight: 600;
+}
+
+.job-card .company-name {
+	color: var(--dark-color);
+	font-weight: 500;
+}
+
+.job-card .location {
+	color: #6b7280;
+}
+
+.badge-status {
+	padding: 6px 12px;
+	font-size: 0.875rem;
+	font-weight: 500;
+}
+
+.sidebar {
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+}
+
+.sidebar .nav-link {
+	color: var(--dark-color);
+	padding: 12px 16px;
+	margin-bottom: 8px;
+	border-radius: 6px;
+	transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+	background-color: var(--primary-color);
+	color: white;
+}
+
+.stats-card {
+	background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+	color: white;
+	padding: 24px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.stats-card h3 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin: 0;
+}
+
+.stats-card p {
+	margin: 0;
+	opacity: 0.9;
+}
+
+.form-control:focus {
+	border-color: var(--primary-color);
+	box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25);
+}
+
+.alert {
+	border-radius: 8px;
+	border: none;
+}
+
+.table {
+	background-color: white;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.table thead th {
+	background-color: var(--primary-color);
+	color: white;
+	border: none;
+	font-weight: 600;
+}
+
+footer {
+	background-color: var(--dark-color);
+	color: white;
+	padding: 20px 0;
+	margin-top: 60px;
+}
+
+.search-box {
+	background-color: white;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+	margin-bottom: 30px;
+}
+
+@media ( max-width : 768px) {
+	.hero-section {
+		padding: 40px 0;
+	}
+	.stats-card h3 {
+		font-size: 2rem;
+	}
+}
